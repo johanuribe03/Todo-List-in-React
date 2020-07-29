@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Form } from "./form";
+import { TodoList } from "./todoList";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+export const Home = () => {
+	const [todos, setTodos] = useState([]);
 
-//create your first component
-export function Home() {
-    
-
-    
-    }
-}
+	return (
+		<div>
+			<Form />
+			<TodoList />
+		</div>
+	);
+};
